@@ -25,7 +25,7 @@ const Carousel = () => {
             $length={iconsObjects.length}
             index={index}
           >
-            <Icone size={100} color="#4d4d4d" />
+            <Icone size={80} color="#4d4d4d" />
           </Item>
         ))}
       </Wrapper>
