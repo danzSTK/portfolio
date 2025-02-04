@@ -1,12 +1,14 @@
+import Carousel from '../../components/Carousel'
 import Hero from '../../components/Hero'
+import { Container } from '../../styles'
 
 const Home = () => {
   return (
     <>
-      <Hero />
-      <div id='sobre' style={{height: "100vh"}}>
-        Teste teste Teste
-      </div>
+      <Container>
+        <Hero />
+      </Container>
+      <Carousel />
     </>
   )
 }

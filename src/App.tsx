@@ -7,8 +7,8 @@ function App() {
     <>
       <Container>
         <Header />
-        <Home />
       </Container>
+        <Home />
       <GlobalStyle />
     </>
   )

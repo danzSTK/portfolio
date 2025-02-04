@@ -57,7 +57,7 @@ export const ActionBar = styled.div`
     font-size: 24px;
     padding: 10px 24px;
     border-radius: 10px;
-    backdrop-filter: blur(20px);
+    //backdrop-filter: blur(20px);
     background: linear-gradient(
       to right,
       rgba(118, 60, 172, 1) 0%,
@@ -66,14 +66,21 @@ export const ActionBar = styled.div`
     );
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    will-change: transform;
+    transform: translateZ(0);
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }
 
   button {
     display: flex;
     align-items: center;
-
     height: 60px;
     gap: 10px;
+
     color: ${colors.text.primary};
     text-decoration: none;
     font-size: 24px;
@@ -82,6 +89,13 @@ export const ActionBar = styled.div`
     background-color: transparent;
     border: 1px solid;
     outline: none;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    will-change: transform;
+
+    &:hover {
+      transform:scale(1.01);
+    }
   }
 `
 const balanco = keyframes`
