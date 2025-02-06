@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import { colors } from '../../styles'
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
@@ -40,15 +40,15 @@ export const ContentRight = styled.div`
 `
 
 export const ActionBar = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 16px;
   gap: 24px;
   font-weight: 500;
 
   a {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 60px;
     gap: 10px;
@@ -57,13 +57,14 @@ export const ActionBar = styled.div`
     font-size: 24px;
     padding: 10px 24px;
     border-radius: 10px;
+    background-color: rgba(118, 60, 172, 1);
     //backdrop-filter: blur(20px);
-    background: linear-gradient(
+   /*  background: linear-gradient(
       to right,
       rgba(118, 60, 172, 1) 0%,
       rgba(118, 60, 172, 0.2) 77%,
       rgba(118, 60, 172, 0) 100%
-    );
+    ); */
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease;
@@ -87,7 +88,7 @@ export const ActionBar = styled.div`
     padding: 10px 24px;
     border-radius: 10px;
     background-color: transparent;
-    border: 1px solid;
+    border: 1px solid rgba(242,242,242,0.3);
     outline: none;
     transition: transform 0.4s ease;
     cursor: pointer;

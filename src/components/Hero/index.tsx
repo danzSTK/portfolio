@@ -24,7 +24,7 @@ const Hero = () => {
         <ActionBar>
           <a href="">
             <MdDownload size={24} />
-            Download cv
+            Curriculo
           </a>
           <button>
             <RiWhatsappFill size={24} />

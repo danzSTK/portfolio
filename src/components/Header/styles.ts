@@ -7,16 +7,15 @@ export const Header = styled.header`
   left: 50%;
   transform: translateX(-50%);
   max-width: 1200px;
-  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 16px 24px;
   margin: 24px;
   z-index: 1;
 
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(2, 4, 16, 1) 0%,
     rgba(12, 4, 16, 0.22) 77%,
@@ -26,7 +25,13 @@ export const Header = styled.header`
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(3px);
+  background-color: #f2f2f20d;
+  border: 1px solid rgba(242,242,242,.1);
+  border-radius: 24px;
+  transition: box-shadow 1s cubic-bezier(.23,1,.32,1),border .6s cubic-bezier(.165,.84,.44,1);
+  box-shadow: 0 10px 25px #00000026;
 `
 
 export const Logo = styled.h1`
