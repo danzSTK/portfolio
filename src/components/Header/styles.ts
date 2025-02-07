@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Header = styled.header`
+  display: none !important;
   position: fixed;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 1200px;
@@ -12,7 +13,6 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  margin: 24px;
   z-index: 1;
 
   /* background: radial-gradient(
@@ -27,7 +27,7 @@ export const Header = styled.header`
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(3px);
-  background-color: #f2f2f20d;
+  background-color:rgba(0, 40, 85, 0.05);
   border: 1px solid rgba(242,242,242,.1);
   border-radius: 24px;
   transition: box-shadow 1s cubic-bezier(.23,1,.32,1),border .6s cubic-bezier(.165,.84,.44,1);

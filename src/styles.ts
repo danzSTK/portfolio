@@ -19,7 +19,7 @@ export const breakpoints = {
 
 export const GlobalStyle = createGlobalStyle`
   html {
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
   }
 
   * {
@@ -27,7 +27,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    scroll-behavior: smooth;
   }
 
   body {
@@ -52,5 +51,6 @@ export const StyledParagraph = styled.p<{ $size?: string }>`
 
   span {
     font-weight: 500;
+    color: ${colors.text.third};
   }
 `

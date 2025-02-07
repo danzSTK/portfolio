@@ -1,7 +1,26 @@
 import styled, { keyframes } from 'styled-components'
 import { colors } from '../../styles'
 
+const downloadEffect = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px); // Ícone desce suavemente
+    opacity: 0; // Desaparece na descida
+  }
+  51% {
+    transform: translateY(-22px); // Reposiciona acima
+    opacity: 0; // Mantém invisível na parte superior
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; // Ícone reaparece suavemente
+  }
+`
+
 export const HeroContainer = styled.section`
+  scroll-behavior: smooth;
   position: relative;
   display: flex;
   justify-content: center;
@@ -58,13 +77,6 @@ export const ActionBar = styled.div`
     padding: 10px 24px;
     border-radius: 10px;
     background-color: rgba(118, 60, 172, 1);
-    //backdrop-filter: blur(20px);
-   /*  background: linear-gradient(
-      to right,
-      rgba(118, 60, 172, 1) 0%,
-      rgba(118, 60, 172, 0.2) 77%,
-      rgba(118, 60, 172, 0) 100%
-    ); */
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease;
@@ -72,12 +84,16 @@ export const ActionBar = styled.div`
     transform: translateZ(0);
 
     &:hover {
+      svg {
+        animation: ${downloadEffect} 0.6s ease-in-out;
+      }
       transform: scale(1.01);
     }
   }
 
   button {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 60px;
     gap: 10px;
@@ -88,14 +104,14 @@ export const ActionBar = styled.div`
     padding: 10px 24px;
     border-radius: 10px;
     background-color: transparent;
-    border: 1px solid rgba(242,242,242,0.3);
+    border: 1px solid rgba(242, 242, 242, 0.3);
     outline: none;
     transition: transform 0.4s ease;
     cursor: pointer;
     will-change: transform;
 
     &:hover {
-      transform:scale(1.01);
+      transform: scale(1.01);
     }
   }
 `
@@ -121,4 +137,3 @@ export const ArrowAnimate = styled.a`
 
   animation: ${balanco} 2s linear infinite;
 `
-
