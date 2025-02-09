@@ -1,7 +1,14 @@
 import { IoIosArrowForward, IoLogoJavascript } from 'react-icons/io'
 import { Container, StyledParagraph } from '../../styles'
 import project1Background from './../../assets/images/teste.png'
-import { ActionBar, Content, Description, PathContent, ToolsContent, Wrapper } from './styles'
+import {
+  ActionBar,
+  Content,
+  Description,
+  PathContent,
+  ToolsContent,
+  Wrapper
+} from './styles'
 import { SiGulp } from 'react-icons/si'
 import { FaSass } from 'react-icons/fa'
 import { MdHtml } from 'react-icons/md'
@@ -49,22 +56,36 @@ const Projects = () => {
             <img src={project1Background} alt="" />
           </div>
         </Content>
-        <Content className="reverse">
+        <Content tabIndex={0} className="reverse">
           <Description>
-            <StyledParagraph $size="24px" as="h3">
-              Spotify <span>project</span>
-            </StyledParagraph>
-            <br />
-            <StyledParagraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              facere soluta similique ipsam tempora ipsum reprehenderit ratione
-              earum quidem error praesentium beatae velit perspiciatis in
-              labore, voluptates sapiente ullam maiores.
-            </StyledParagraph>
+            <header>
+              <StyledParagraph $size="24px" as="h3">
+                Spotify <span>project</span>
+              </StyledParagraph>
+            </header>
+            <article>
+              <StyledParagraph>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita facere soluta similique ipsam tempora ipsum
+                reprehenderit ratione
+                <span>
+                  earum quidem error praesentium beatae velit perspiciatis in
+                  labore, voluptates sapiente ullam maiores.
+                </span>
+              </StyledParagraph>
+            </article>
             <ActionBar>
-              <a href="" target="_blank">
-                View work <IoIosArrowForward />
-              </a>
+              <ToolsContent>
+                <SiGulp />
+                <FaSass />
+                <MdHtml />
+                <IoLogoJavascript />
+              </ToolsContent>
+              <PathContent>
+                <a href="" target="_blank">
+                  View work <IoIosArrowForward />
+                </a>
+              </PathContent>
             </ActionBar>
           </Description>
           <div>

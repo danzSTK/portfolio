@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Header = styled.header`
-  display: none !important;
   position: fixed;
   top: 20px;
   left: 50%;
