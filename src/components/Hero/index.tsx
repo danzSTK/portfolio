@@ -9,6 +9,7 @@ import {
 } from './styles'
 import { MdDownload } from 'react-icons/md'
 import { RiArrowDownSLine, RiWhatsappFill } from 'react-icons/ri'
+import curriculo from '../../assets/docs/Meu CV Ebac.docx.pdf'
 
 const Hero = () => {
   return (
@@ -22,7 +23,14 @@ const Hero = () => {
           <span>Full Stack</span>
         </StyledParagraph>
         <ActionBar>
-          <a href="">
+          <a
+            href={curriculo}
+            download
+            rel="noopener noreferrer"
+            target="_blank"
+            type="PDF"
+            title='Baixar curriculo em PDF'
+          >
             <MdDownload size={24} />
             Curriculo
           </a>
