@@ -33,7 +33,7 @@ const balanco = keyframes`
   }
 `
 
-export const HeroContainer = styled.section`
+export const HeroContainer = styled.div`
   scroll-behavior: smooth;
   position: relative;
   display: flex;
@@ -50,7 +50,7 @@ export const HeroContainer = styled.section`
   }
 `
 
-export const ContentLeft = styled.div`
+export const ContentLeft = styled.article`
   display: block;
   max-width: 600px;
   text-align: center;
@@ -66,7 +66,7 @@ export const ContentLeft = styled.div`
   }
 `
 
-export const ContentRight = styled.div`
+export const ContentRight = styled.article`
   position: relative;
   display: flex;
 

@@ -24,8 +24,12 @@ export const Header = styled.header`
   box-shadow: 0 10px 25px #00000026;
 
   @media (max-width: ${breakpoints.tablet}) {
-    width: auto;
+    width: 100%;
     max-width: 90%;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: auto;
   }
 `
 

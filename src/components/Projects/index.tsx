@@ -16,7 +16,7 @@ import { MdHtml } from 'react-icons/md'
 
 const Projects = () => {
   return (
-    <Container>
+    <Container as="section">
       <Wrapper>
         <StyledParagraph $size="40px" as="h2">
           Selected <span>Works</span>

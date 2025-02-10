@@ -1,6 +1,6 @@
 import Header from './components/header'
 import Home from './pages/Home'
-import { Container, GlobalStyle } from './styles'
+import { GlobalStyle } from './styles'
 import LocomotiveScrollProvider from './provider/LocomotiveScrollProvider'
 import { useRef } from 'react'
 
@@ -9,13 +9,11 @@ function App() {
 
   return (
     <LocomotiveScrollProvider containerRef={containerRef}>
+      <Header />
       <main ref={containerRef}>
-        <Container>
-          <Header />
-        </Container>
         <Home />
-        <GlobalStyle />
       </main>
+      <GlobalStyle />
     </LocomotiveScrollProvider>
   )
 }

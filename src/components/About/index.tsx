@@ -3,7 +3,7 @@ import { Wrapper } from './styles'
 
 const About = () => {
   return (
-    <Container>
+    <Container as="section">
       <Wrapper id="sobre" data-scroll-section>
         <StyledParagraph $size="40px" as="h2">
           About <span>me</span>

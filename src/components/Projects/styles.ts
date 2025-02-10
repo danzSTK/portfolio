@@ -29,7 +29,7 @@ export const Description = styled.div`
   -webkit-backdrop-filter: blur(10px);
 `
 
-export const Content = styled.div`
+export const Content = styled.article`
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -173,7 +173,7 @@ export const ActionBar = styled.footer`
   display: grid;
   justify-content: flex-end;
   grid-template-columns: repeat(2, 1fr);
-  
+
   @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
   }
