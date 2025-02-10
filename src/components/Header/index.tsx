@@ -1,10 +1,11 @@
 import * as S from './styles'
+import logo from '../../assets/images/logo.png'
 
 const Header = () => {
   return (
     <S.Header>
       <S.Logo>
-        Daniel Félix
+        <img src={logo} alt="" />
       </S.Logo>
       <nav>
         <S.Links>
@@ -16,9 +17,6 @@ const Header = () => {
           </li>
           <li>
             <S.Path href="">Projetos</S.Path>
-          </li>
-          <li>
-            <S.Path href="">Contato</S.Path>
           </li>
         </S.Links>
       </nav>

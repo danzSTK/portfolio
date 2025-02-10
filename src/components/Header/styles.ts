@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Header = styled.header`
   position: fixed;
@@ -14,37 +14,44 @@ export const Header = styled.header`
   padding: 16px 24px;
   z-index: 1;
 
-  /* background: radial-gradient(
-    circle,
-    rgba(2, 4, 16, 1) 0%,
-    rgba(12, 4, 16, 0.22) 77%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(3px);
-  background-color:rgba(0, 40, 85, 0.05);
-  border: 1px solid rgba(242,242,242,.1);
+  background-color: rgba(0, 40, 85, 0.05);
+  border: 1px solid rgba(242, 242, 242, 0.1);
   border-radius: 24px;
-  transition: box-shadow 1s cubic-bezier(.23,1,.32,1),border .6s cubic-bezier(.165,.84,.44,1);
+  transition:
+    box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1),
+    border 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 10px 25px #00000026;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: auto;
+    max-width: 90%;
+  }
 `
 
 export const Logo = styled.h1`
-  font-size: 24px;
-  font-family: 'pacifico';
-  background: linear-gradient(to right, #7b4397, #dc2430);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+
+  img {
+    width: 100%;
+    filter: invert();
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 3rem;
+  }
 `
 
 export const Links = styled.ul`
   display: flex;
   gap: 24px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
+  }
 `
 
 export const Path = styled.a`

@@ -17,7 +17,7 @@ const Carousel = () => {
 
 
   return (
-    <div>
+    <section>
       <Wrapper>
         {iconsObjects.map((Icone, index) => (
           <Item
@@ -29,7 +29,7 @@ const Carousel = () => {
           </Item>
         ))}
       </Wrapper>
-    </div>
+    </section>
   )
 }
 

@@ -40,8 +40,12 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   position: relative;
   max-width: 1200px;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 90%;
+  }
 `
 
 export const StyledParagraph = styled.p<{ $size?: string }>`

@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 const downloadEffect = keyframes`
   0% {
@@ -19,6 +19,20 @@ const downloadEffect = keyframes`
   }
 `
 
+const balanco = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+`
+
 export const HeroContainer = styled.section`
   scroll-behavior: smooth;
   position: relative;
@@ -27,12 +41,29 @@ export const HeroContainer = styled.section`
   align-items: center;
   gap: 100px;
   height: 100vh;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+  }
 `
 
 export const ContentLeft = styled.div`
   display: block;
   max-width: 600px;
   text-align: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    h2 {
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
 `
 
 export const ContentRight = styled.div`
@@ -54,7 +85,12 @@ export const ContentRight = styled.div`
   }
   img {
     position: relative;
-    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      max-width: 50%;
+    }
   }
 `
 
@@ -114,24 +150,25 @@ export const ActionBar = styled.div`
       transform: scale(1.01);
     }
   }
-`
-const balanco = keyframes`
-  0% {
-    transform: translateY(0);
-  }
 
-  50% {
-    transform: translateY(20px);
-  }
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    a {
+      font-size: 20px;
+      height: 45px;
+    }
 
-  100% {
-    transform: translateY(0);
+    button {
+      font-size: 20px;
+      height: 45px;
+    }
   }
 `
 
 export const ArrowAnimate = styled.a`
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   text-decoration: none;
   color: ${colors.text.secondary};
 

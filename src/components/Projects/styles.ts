@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import { breakpoints, colors } from '../../styles'
 
 export const Wrapper = styled.section`
-  margin-top: 80px;
+  margin: 80px 0;
 `
 
 export const Description = styled.div`
@@ -41,6 +41,14 @@ export const Content = styled.div`
     ${Description} {
       left: 50%;
     }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      flex-direction: row;
+
+      ${Description} {
+        left: auto;
+      }
+    }
   }
 
   img {
@@ -51,14 +59,16 @@ export const Content = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    display: block;
-
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: unset;
     }
 
     ${Description} {
-      justify-content: space-between;
+      gap: 50px;
+      justify-content: center;
       max-width: 100%;
       height: 100%;
       background: linear-gradient(
@@ -68,6 +78,27 @@ export const Content = styled.div`
         rgba(255, 255, 255, 0) 100%
       );
       backdrop-filter: blur(2px);
+      text-shadow: 2px 6px 10px rgba(0, 0, 0, 1);
+
+      h3 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-top: 50px;
+    ${Description} {
+      gap: 10px;
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     }
   }
 `
@@ -82,6 +113,10 @@ export const ToolsContent = styled.article`
   svg:hover {
     transition: color 0.2s linear;
     color: ${colors.text.primary};
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
   }
 `
 
@@ -138,4 +173,8 @@ export const ActionBar = styled.footer`
   display: grid;
   justify-content: flex-end;
   grid-template-columns: repeat(2, 1fr);
+  
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+  }
 `
