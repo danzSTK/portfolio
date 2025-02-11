@@ -2,7 +2,7 @@ import { useRef } from 'react'
 
 import LocomotiveScrollProvider from './provider/LocomotiveScrollProvider'
 
-import Header from './components/header'
+import Header from './components/Header'
 import Home from './pages/Home'
 
 import { GlobalStyle } from './styles'

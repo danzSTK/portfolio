@@ -1,7 +1,7 @@
 import Hero from '../../components/Hero'
-import About from '../../components/about'
-import Carousel from '../../components/carousel'
-import Projects from '../../components/projects'
+import About from '../../components/About'
+import Carousel from '../../components/Carousel'
+import Projects from '../../components/Projects'
 
 const Home = () => {
   return (

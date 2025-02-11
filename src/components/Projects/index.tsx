@@ -7,7 +7,7 @@ import project1Background from './../../assets/images/teste.png'
 import project2Background from '../../assets/images/clone-disneyplus.png'
 
 import * as G from '../../styles'
-import * as S from './styles'
+import * as S from '../Projects/styles'
 
 const Projects = () => {
   return (

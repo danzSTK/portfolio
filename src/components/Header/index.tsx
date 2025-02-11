@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from '../Header/styles'
 
 import logo from '../../assets/images/logo.png'
 

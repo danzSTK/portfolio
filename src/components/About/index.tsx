@@ -1,5 +1,5 @@
 import * as G from '../../styles'
-import * as S from './styles'
+import * as S from '../About/styles'
 
 const About = () => {
   return (

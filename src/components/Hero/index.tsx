@@ -6,7 +6,7 @@ import curriculo from '../../assets/docs/Meu CV Ebac.docx.pdf'
 
 import * as G from '../../styles'
 
-import * as S from './styles'
+import * as S from '../Hero/styles'
 
 const Hero = () => {
   return (
