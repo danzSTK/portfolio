@@ -10,7 +10,7 @@ import * as S from './styles'
 
 const Hero = () => {
   return (
-    <G.Container as="section">
+    <G.Container as="section" id="home" data-scroll-section>
       <S.HeroContainer>
         <S.ContentLeft>
           <G.StyledParagraph $size="56px" as="h2">

@@ -11,13 +11,13 @@ const Header = () => {
       <nav>
         <S.Links>
           <li>
-            <S.Path href="">Home</S.Path>
+            <S.Path href="#home">Home</S.Path>
           </li>
           <li>
-            <S.Path href="#sobre">Sobre mim</S.Path>
+            <S.Path href="#about">Sobre mim</S.Path>
           </li>
           <li>
-            <S.Path href="">Projetos</S.Path>
+            <S.Path href="#projects">Projetos</S.Path>
           </li>
         </S.Links>
       </nav>

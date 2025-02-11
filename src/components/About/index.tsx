@@ -3,8 +3,8 @@ import * as S from './styles'
 
 const About = () => {
   return (
-    <G.Container as="section">
-      <S.Wrapper id="sobre" data-scroll-section>
+    <G.Container as="section" data-scroll-section id="about">
+      <S.Wrapper>
         <G.StyledParagraph $size="40px" as="h2">
           About <span>me</span>
         </G.StyledParagraph>

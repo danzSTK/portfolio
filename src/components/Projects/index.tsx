@@ -11,7 +11,7 @@ import * as S from './styles'
 
 const Projects = () => {
   return (
-    <G.Container as="section">
+    <G.Container as="section" data-scroll-section id="projects">
       <S.Wrapper>
         <G.StyledParagraph $size="40px" as="h2">
           Selected <span>Works</span>
@@ -75,8 +75,15 @@ const Projects = () => {
             </header>
             <article>
               <G.StyledParagraph>
-              Este projeto visa aprimorar minhas habilidades na construção de layouts utilizando SASS, aplicando as melhores práticas de escrita no formato BEM (Block, Element, Modifier).
-              <span> Com o uso de JavaScript, consegui replicar fielmente as animações originais da landing page do Disney+, garantindo uma experiência fluida e envolvente.</span>
+                Este projeto visa aprimorar minhas habilidades na construção de
+                layouts utilizando SASS, aplicando as melhores práticas de
+                escrita no formato BEM (Block, Element, Modifier).
+                <span>
+                  {' '}
+                  Com o uso de JavaScript, consegui replicar fielmente as
+                  animações originais da landing page do Disney+, garantindo uma
+                  experiência fluida e envolvente.
+                </span>
               </G.StyledParagraph>
             </article>
             <S.ActionBar>
@@ -102,8 +109,12 @@ const Projects = () => {
             href="https://clone-disneyplus-iota-dusky.vercel.app"
             target="_blank"
             title="Veja o projeto em outra aba"
-            rel="noopener noreferrer">
-            <img src={project2Background} alt="PNG da página inicial do projeto"/>
+            rel="noopener noreferrer"
+          >
+            <img
+              src={project2Background}
+              alt="PNG da página inicial do projeto"
+            />
           </a>
         </S.Content>
       </S.Wrapper>
