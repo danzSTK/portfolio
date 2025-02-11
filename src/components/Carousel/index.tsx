@@ -1,8 +1,9 @@
 import { FaGitAlt, FaJava, FaReact } from 'react-icons/fa'
-import { Item, Wrapper } from './styles'
 import { SiRedux, SiTypescript } from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io'
 import { RiNodejsFill } from 'react-icons/ri'
+
+import * as S from './styles'
 
 const Carousel = () => {
   const iconsObjects: React.ElementType[] = [
@@ -18,17 +19,17 @@ const Carousel = () => {
 
   return (
     <section>
-      <Wrapper>
+      <S.Wrapper>
         {iconsObjects.map((Icone, index) => (
-          <Item
+          <S.Item
             key={index}
             $length={iconsObjects.length}
             index={index}
           >
             <Icone size={80} color="#4d4d4d" />
-          </Item>
+          </S.Item>
         ))}
-      </Wrapper>
+      </S.Wrapper>
     </section>
   )
 }

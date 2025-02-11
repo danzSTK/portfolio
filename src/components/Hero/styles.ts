@@ -6,16 +6,16 @@ const downloadEffect = keyframes`
     transform: translateY(0);
   }
   50% {
-    transform: translateY(20px); // Ícone desce suavemente
-    opacity: 0; // Desaparece na descida
+    transform: translateY(20px); 
+    opacity: 0;
   }
   51% {
-    transform: translateY(-22px); // Reposiciona acima
-    opacity: 0; // Mantém invisível na parte superior
+    transform: translateY(-22px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1; // Ícone reaparece suavemente
+    opacity: 1;
   }
 `
 
