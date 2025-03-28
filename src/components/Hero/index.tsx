@@ -1,12 +1,12 @@
-import { MdDownload } from 'react-icons/md'
-import { RiArrowDownSLine, RiWhatsappFill } from 'react-icons/ri'
+import { MdDownload } from "react-icons/md";
+import { RiArrowDownSLine, RiWhatsappFill } from "react-icons/ri";
 
-import cartoon from '../../assets/images/me_cartoon.png'
-import curriculo from '../../assets/docs/Meu CV Ebac.docx.pdf'
+import cartoon from "../../assets/images/me_cartoon.png";
+import curriculo from "../../assets/docs/Meu CV Ebac.docx.pdf";
 
-import * as G from '../../styles'
+import * as G from "../../styles";
 
-import * as S from '../Hero/styles'
+import * as S from "../Hero/styles";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
             Olá sou <span>Daniel Félix!</span>
           </G.StyledParagraph>
           <G.StyledParagraph $size="32px" as="h3">
-            Sou <span>criador</span> de <span>soluções</span> Web{' '}
+            Sou <span>criador</span> de <span>soluções</span> Web{" "}
             <span>Full Stack</span>
           </G.StyledParagraph>
           <S.ActionBar>
@@ -48,7 +48,7 @@ const Hero = () => {
         </S.ArrowAnimate>
       </S.HeroContainer>
     </G.Container>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

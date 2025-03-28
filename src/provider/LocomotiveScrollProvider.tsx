@@ -1,11 +1,11 @@
-import LocomotiveScroll from 'locomotive-scroll'
+import LocomotiveScroll from "locomotive-scroll";
 import {
   createContext,
   FC,
   PropsWithChildren,
   useEffect,
   useRef
-} from 'react'
+} from "react";
 
 type LocomotiveScrollContextType = {
   /* containerRef: React.MutableRefObject<HTMLElement | null> */
@@ -18,12 +18,12 @@ type LocomotiveScrollProps = {
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const LocomotiveScrollContext =
-  createContext<LocomotiveScrollContextType>(null)
+  createContext<LocomotiveScrollContextType>(null);
 
 const LocomotiveScrollProvider: FC<
   PropsWithChildren<LocomotiveScrollProps>
 > = ({ children, containerRef }) => {
-  const locomotiveScroll = useRef<LocomotiveScroll | null>(null)
+  const locomotiveScroll = useRef<LocomotiveScroll | null>(null);
 
   useEffect(() => {
     locomotiveScroll.current = new LocomotiveScroll({
@@ -31,17 +31,17 @@ const LocomotiveScrollProvider: FC<
         content: containerRef.current as HTMLElement,
         smoothWheel: true
       }
-    })
+    });
     return () => {
-      locomotiveScroll.current?.destroy()
-    }
-  }, [containerRef])
+      locomotiveScroll.current?.destroy();
+    };
+  }, [containerRef]);
 
   return (
     <LocomotiveScrollContext.Provider value={{ locomotiveScroll }}>
       {children}
     </LocomotiveScrollContext.Provider>
-  )
-}
+  );
+};
 
-export default LocomotiveScrollProvider
+export default LocomotiveScrollProvider;

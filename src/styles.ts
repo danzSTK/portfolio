@@ -1,21 +1,21 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
 
 export const colors = {
-  white: '#fff',
-  main: '#010208',
-  purple: '#763CAC',
+  white: "#fff",
+  main: "#010208",
+  purple: "#763CAC",
   text: {
-    primary: '#fff',
-    secondary: '#A362FF',
-    third: '#CCD6F6'
+    primary: "#fff",
+    secondary: "#A362FF",
+    third: "#CCD6F6"
   }
-}
+};
 
 export const breakpoints = {
-  descktop: '1200px',
-  tablet: '1024px',
-  mobile: '768px'
-}
+  descktop: "1200px",
+  tablet: "1024px",
+  mobile: "768px"
+};
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
-`
+`;
 
 export const Container = styled.div`
   position: relative;
@@ -46,10 +46,10 @@ export const Container = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 90%;
   }
-`
+`;
 
 export const StyledParagraph = styled.p<{ $size?: string }>`
-  font-size: ${({ $size }) => $size || '16px'};
+  font-size: ${({ $size }) => $size || "16px"};
   color: ${colors.text.primary};
   font-weight: 200;
 
@@ -57,4 +57,4 @@ export const StyledParagraph = styled.p<{ $size?: string }>`
     font-weight: 500;
     color: ${colors.text.third};
   }
-`
+`;

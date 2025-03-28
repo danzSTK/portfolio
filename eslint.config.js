@@ -29,6 +29,5 @@ export default tseslint.config(
       'quotes': 'warn',
       'semi': "warn",
     },
-  },
-  eslintconfigPrettier
+  }
 )

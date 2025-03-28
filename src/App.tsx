@@ -1,14 +1,14 @@
-import { useRef } from 'react'
+import { useRef } from "react";
 
-import LocomotiveScrollProvider from './provider/LocomotiveScrollProvider'
+import LocomotiveScrollProvider from "./provider/LocomotiveScrollProvider";
 
-import Header from './components/Header'
-import Home from './pages/Home'
+import Header from "./components/Header";
+import Home from "./pages/Home";
 
-import { GlobalStyle } from './styles'
+import { GlobalStyle } from "./styles";
 
 function App() {
-  const containerRef = useRef<HTMLElement | null>(null)
+  const containerRef = useRef<HTMLElement | null>(null);
 
   return (
     <LocomotiveScrollProvider containerRef={containerRef}>
@@ -18,7 +18,7 @@ function App() {
       </main>
       <GlobalStyle />
     </LocomotiveScrollProvider>
-  )
+  );
 }
 
-export default App
+export default App;

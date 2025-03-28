@@ -10,4 +10,4 @@ export const Wrapper = styled.article`
   h2 {
     margin-bottom: 16px;
   }
-`
+`;

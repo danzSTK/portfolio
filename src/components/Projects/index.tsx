@@ -1,13 +1,13 @@
-import { IoIosArrowForward, IoLogoJavascript } from 'react-icons/io'
-import { SiGulp } from 'react-icons/si'
-import { FaSass } from 'react-icons/fa'
-import { MdHtml } from 'react-icons/md'
+import { IoIosArrowForward, IoLogoJavascript } from "react-icons/io";
+import { SiGulp } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
+import { MdHtml } from "react-icons/md";
 
-import project1Background from './../../assets/images/teste.png'
-import project2Background from '../../assets/images/clone-disneyplus.png'
+import project1Background from "./../../assets/images/teste.png";
+import project2Background from "../../assets/images/clone-disneyplus.png";
 
-import * as G from '../../styles'
-import * as S from '../Projects/styles'
+import * as G from "../../styles";
+import * as S from "../Projects/styles";
 
 const Projects = () => {
   return (
@@ -26,7 +26,7 @@ const Projects = () => {
             <article>
               <G.StyledParagraph>
                 Desenvolvi um clone da página de preços do Spotify utilizando
-                SASS, Gulp, JavaScript e linguagens de marcação.{' '}
+                SASS, Gulp, JavaScript e linguagens de marcação.{" "}
                 <span>
                   O projeto foi criado com o objetivo de aprofundar minha
                   compreensão das funcionalidades avançadas do SASS, como
@@ -79,7 +79,7 @@ const Projects = () => {
                 layouts utilizando SASS, aplicando as melhores práticas de
                 escrita no formato BEM (Block, Element, Modifier).
                 <span>
-                  {' '}
+                  {" "}
                   Com o uso de JavaScript, consegui replicar fielmente as
                   animações originais da landing page do Disney+, garantindo uma
                   experiência fluida e envolvente.
@@ -119,7 +119,7 @@ const Projects = () => {
         </S.Content>
       </S.Wrapper>
     </G.Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

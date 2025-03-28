@@ -1,9 +1,9 @@
-import styled, { keyframes } from 'styled-components'
-import { breakpoints, colors } from '../../styles'
+import styled, { keyframes } from "styled-components";
+import { breakpoints, colors } from "../../styles";
 
 export const Wrapper = styled.section`
   margin: 80px 0;
-`
+`;
 
 export const Description = styled.div`
   position: absolute;
@@ -27,7 +27,7 @@ export const Description = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-`
+`;
 
 export const Content = styled.article`
   position: relative;
@@ -101,7 +101,7 @@ export const Content = styled.article`
       }
     }
   }
-`
+`;
 
 export const ToolsContent = styled.article`
   display: flex;
@@ -118,7 +118,7 @@ export const ToolsContent = styled.article`
   @media (max-width: ${breakpoints.mobile}) {
     display: none;
   }
-`
+`;
 
 const arrowEffect = keyframes`
   0% {
@@ -136,7 +136,7 @@ const arrowEffect = keyframes`
     transform: translateX(0);
     opacity: 1; // Ícone reaparece suavemente
   }
-`
+`;
 
 export const PathContent = styled.article`
   display: flex;
@@ -167,7 +167,7 @@ export const PathContent = styled.article`
       }
     }
   }
-`
+`;
 
 export const ActionBar = styled.footer`
   display: grid;
@@ -177,4 +177,4 @@ export const ActionBar = styled.footer`
   @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
   }
-`
+`;

@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-import { breakpoints, colors } from '../../styles'
+import styled, { keyframes } from "styled-components";
+import { breakpoints, colors } from "../../styles";
 
 const downloadEffect = keyframes`
   0% {
@@ -17,7 +17,7 @@ const downloadEffect = keyframes`
     transform: translateY(0);
     opacity: 1;
   }
-`
+`;
 
 const balanco = keyframes`
   0% {
@@ -31,7 +31,7 @@ const balanco = keyframes`
   100% {
     transform: translateY(0);
   }
-`
+`;
 
 export const HeroContainer = styled.div`
   scroll-behavior: smooth;
@@ -48,7 +48,7 @@ export const HeroContainer = styled.div`
     gap: 50px;
     height: 100vh;
   }
-`
+`;
 
 export const ContentLeft = styled.article`
   display: block;
@@ -64,7 +64,7 @@ export const ContentLeft = styled.article`
       font-size: 16px;
     }
   }
-`
+`;
 
 export const ContentRight = styled.article`
   position: relative;
@@ -92,7 +92,7 @@ export const ContentRight = styled.article`
       max-width: 50%;
     }
   }
-`
+`;
 
 export const ActionBar = styled.div`
   display: grid;
@@ -164,7 +164,7 @@ export const ActionBar = styled.div`
       height: 45px;
     }
   }
-`
+`;
 
 export const ArrowAnimate = styled.a`
   position: absolute;
@@ -173,4 +173,4 @@ export const ArrowAnimate = styled.a`
   color: ${colors.text.secondary};
 
   animation: ${balanco} 2s linear infinite;
-`
+`;

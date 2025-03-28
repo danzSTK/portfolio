@@ -1,9 +1,9 @@
-import { FaGitAlt, FaJava, FaReact } from 'react-icons/fa'
-import { SiRedux, SiTypescript } from 'react-icons/si'
-import { IoLogoJavascript } from 'react-icons/io'
-import { RiNodejsFill } from 'react-icons/ri'
+import { FaGitAlt, FaJava, FaReact } from "react-icons/fa";
+import { SiRedux, SiTypescript } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { RiNodejsFill } from "react-icons/ri";
 
-import * as S from '../Carousel/styles'
+import * as S from "../Carousel/styles";
 
 const Carousel = () => {
   const iconsObjects: React.ElementType[] = [
@@ -14,7 +14,7 @@ const Carousel = () => {
     SiRedux,
     RiNodejsFill,
     FaGitAlt
-  ]
+  ];
 
 
   return (
@@ -31,7 +31,7 @@ const Carousel = () => {
         ))}
       </S.Wrapper>
     </section>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

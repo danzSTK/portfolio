@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from "styled-components";
+import { breakpoints } from "../../styles";
 
 type ItemProps = {
   $length: number
@@ -17,13 +18,17 @@ export const Wrapper = styled.ul`
     rgba(0, 0, 0, 1) 80%,
     transparent
   );
-`
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 50px;
+  }
+`;
 
 const scrollLeft = keyframes`
   to {
     left: -200px;
   }
-`
+`;
 
 export const Item = styled.li<ItemProps>`
   display: flex;
@@ -37,4 +42,11 @@ export const Item = styled.li<ItemProps>`
       20s / ${({ $length }) => $length} *
       (${({ $length }) => $length} - ${({ index }) => index}) * -1
   );
-`
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 50px;
+    svg {
+      width: 50px;
+    }
+  }
+`;
