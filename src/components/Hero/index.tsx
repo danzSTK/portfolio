@@ -32,10 +32,17 @@ const Hero = () => {
               <MdDownload size={24} />
               Curriculo
             </a>
-            <button>
-              <RiWhatsappFill size={24} />
-              <span>Entre em contato</span>
-            </button>
+            <span>
+              <a
+                href="mailto:carlosdanielfelixfarias@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contactLink"
+              >
+                <RiWhatsappFill size={24} />
+                <span>Entre em contato</span>
+              </a>
+            </span>
           </S.ActionBar>
         </S.ContentLeft>
         <S.ContentRight>

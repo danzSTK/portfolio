@@ -6,7 +6,7 @@ const downloadEffect = keyframes`
     transform: translateY(0);
   }
   50% {
-    transform: translateY(20px); 
+    transform: translateY(20px);
     opacity: 0;
   }
   51% {
@@ -101,7 +101,7 @@ export const ActionBar = styled.div`
   gap: 24px;
   font-weight: 500;
 
-  a {
+  & > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ export const ActionBar = styled.div`
     }
   }
 
-  button {
+  .contactLink {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,7 @@ export const ActionBar = styled.div`
 
     color: ${colors.text.primary};
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 24px;
     border-radius: 10px;
     background-color: transparent;

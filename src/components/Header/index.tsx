@@ -3,6 +3,7 @@ import * as S from "../Header/styles";
 import logo from "../../assets/images/logo.png";
 import { useEffect, useState } from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 enum SessionPathInHeader {
   home = "home",
@@ -62,6 +63,7 @@ const Header = () => {
               href="https://github.com/danzSTK"
               target="_blank"
               rel="noopener noreferrer"
+              title="Acesse meu github"
             >
               <FaGithubSquare size={30} />
             </a>
@@ -71,8 +73,19 @@ const Header = () => {
               href="https://www.linkedin.com/in/danielfelixdev"
               target="_blank"
               rel="noopener noreferrer"
+              title="Acesse meu Linkedin"
             >
               <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:danielfelixfarias@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Entre em contato pelo meu email"
+            >
+              <MdEmail size={30} />
             </a>
           </li>
         </S.SocialPaths>
