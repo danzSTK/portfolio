@@ -33,7 +33,7 @@ export const Content = styled.article`
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin-top: 100px;
+  margin-top: 20px;
 
   &.reverse {
     flex-direction: row-reverse;

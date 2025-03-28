@@ -42,11 +42,11 @@ export const NavLinks = styled.nav`
   background-color: rgba(0, 40, 85, 0.05);
   border: 1px solid rgba(242, 242, 242, 0.1);
   border-radius: 24px;
- /*  transition:
-    box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1),
-    border 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
   box-shadow: 0 10px 25px #00000026;
 
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const Logo = styled.h1`
@@ -68,10 +68,6 @@ export const Logo = styled.h1`
 export const Links = styled.ul`
   display: flex;
   gap: 24px;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    display: none;
-  }
 `;
 
 export const Path = styled.a`

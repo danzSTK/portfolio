@@ -5,7 +5,7 @@ const About = () => {
   return (
     <G.Container as="section" data-scroll-section id="about">
       <S.Wrapper>
-        <G.StyledParagraph $size="40px" as="h2">
+        <G.StyledParagraph className="title" as="h2">
           About <span>me</span>
         </G.StyledParagraph>
         <div>

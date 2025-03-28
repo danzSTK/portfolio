@@ -187,7 +187,7 @@ const StackSession = () => {
   };
   return (
     <G.Container as="section" id="tools">
-      <G.StyledParagraph $size="40px" as="h2">
+      <G.StyledParagraph className="title" as="h2">
         Technologies and <span>tools</span>
       </G.StyledParagraph>
 

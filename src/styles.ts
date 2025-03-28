@@ -46,6 +46,10 @@ export const Container = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 90%;
   }
+
+  .title {
+    font-size: clamp(24px, 36px, 42px);
+  }
 `;
 
 export const StyledParagraph = styled.p<{ $size?: string }>`

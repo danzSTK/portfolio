@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <G.Container as="section" data-scroll-section id="projects">
       <S.Wrapper>
-        <G.StyledParagraph $size="40px" as="h2">
+        <G.StyledParagraph className="title" as="h2">
           Selected <span>Works</span>
         </G.StyledParagraph>
         <S.Content tabIndex={0}>
